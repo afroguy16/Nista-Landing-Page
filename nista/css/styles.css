@@ -1,0 +1,212 @@
+body {
+	margin: 0;
+	font-family: Avenir;
+}
+
+p, a {
+	color: #a0a8ae;
+}
+
+header {
+	height: 50px;
+	/*margin-bottom: 20px;*/
+	margin-top: 20px;
+}
+
+.logo img{
+	width: 90px;
+	margin-left: 30px;
+}
+
+header li img {
+	width: 30px;
+}
+
+#container-wrapper {
+	min-height: 650px;
+	border: 10px solid #fcf4ed;
+	/*padding: 20px;*/
+	padding-bottom: 0;
+	box-sizing: border-box;
+}
+
+footer {
+	width: 100%;
+	background-color: #fcf4ed;
+}
+
+footer p {
+	margin-left: 10px
+}
+
+footer p, footer ul {
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+
+footer p, footer ul, li{
+	display: inline-block;
+}
+
+footer img {
+	background-color: #fff;
+	padding: 5px;
+	margin-right: 10px;
+}
+
+/*TEST NAV BAR BEGINS*/
+
+/* Remove margins and padding from the list, and add a black background color */
+#myTopnav .active {
+	list-style-position: inside;
+	border-bottom: 3px solid #fcf4ed;
+}
+
+#myTopnav a {
+	text-transform: uppercase;
+	font-size: 14px
+}
+
+#myTopnav {
+	margin-left: 50px;
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* Float the list items side by side */
+ul.topnav li {float: left;}
+
+/* Style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
+    color: #000;
+    text-align: center;
+    padding: 0 25px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.topnav li a:hover {
+	background-color: #fcf4ed;
+	border-bottom: 3px solid #fcf4ed;
+}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {display: none;}
+
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:680px) {
+	ul.topnav {
+    background-color: #333;
+	}
+	ul.topnav li a {
+    color: #f2f2f2;
+	}
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+@media screen and (max-width:680px) {
+	ul.topnav {
+	 background-color: #333;
+	}
+	ul.topnav li a {
+    color: #f2f2f2;
+	}
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+
+/*END OF TEST NAV BAR*/
+
+.nav-right a {
+	margin-right: 20px !important;
+}
+
+#avatar {
+	width: 300px;
+	background-image: url("images/avatar.jpg");
+	margin-right: 20px;
+}
+
+.slide {
+	min-height: 400px;
+	margin: 80px 120px 80px 150px;
+}
+
+.carousel-indicators{
+	position: 100px;
+}
+
+.carousel-indicators li {
+	display: block;
+	border: 1px solid #d49859;
+	margin-bottom: 20px;
+}
+
+.carousel-indicators li.active {
+	background-color: #fcf4ed;
+	margin-bottom: 15px;
+}
+
+.carousel-inner img {
+	width: 400px;
+	background: #fff url("rectangle.png") no-repeat center center;
+	background-size: 500px;
+}
+
+.carousel-caption {
+	width: 100%;
+	text-align: left;
+	left: 50%;
+}
+
+.carousel-caption h2 small, .carousel-caption h2 {
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #d49859;
+	text-shadow: none;
+	margin-bottom: 0;
+}
+
+.carousel-caption h3 {
+	font-family: Merriweather;
+	font-size: 3em;
+	font-weight: 400;
+	color: #666666;
+	text-shadow: none;
+	margin-top: 0;
+}
+
+.carousel-caption a {
+	color: #666666;
+	text-shadow: none;
+	padding: 10px;
+	border: 1px solid #dbdbdb;
+	z-index: 99999999999;
+	display: inline-block;
+	margin-top: 5px;
+}
