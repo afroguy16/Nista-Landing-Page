@@ -204,6 +204,20 @@ ul.topnav li.icon {display: none;}
   }
 }
 
+/* Medium Screen */
+@media only screen and (min-width: 641px) {
+		#container-wrapper {
+			min-height: 710px;
+		}
+		.slide {
+			max-width: 850px;
+			margin: 95px 100px;
+		}
+		.slide h3 {
+			font-size: 2em;
+		}		
+	} /* min-width 641px, medium screens */
+
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
 @media screen and (max-width:680px) {
 	ul.topnav {
@@ -265,20 +279,31 @@ ul.topnav li.icon {display: none;}
   	display: inline-block;
   }
   .carousel-indicators {
-  	width: 150px;
+  	width: 90px;
   	display: inline;
-  	left: 0;
+  	margin-left: -50px;
   }
   .carousel-caption {
   	text-align: center;
   	left: 0;
   }
+  .carousel-caption h3 {
+  	font-size: 1em;
+  }
   #myCarousel {
   	position: relative;
-
   }
   footer {
   	text-align: center;
+  }
+  .slide {
+  	min-height: 300px;
+  }
+  #container-wrapper {
+  	min-height: 400px;
+  }
+  .footer-right p {
+  	display: none;
   }
 }
 /*END OF TEST NAV BAR*/
